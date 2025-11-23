@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SNAP vs GEE</title>
+  <!-- Favicon عادي -->
+<link rel="icon" type="image/png" href="img/القسم.jpeg">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+</head>
+<body>
+
+  <!-- ================== Navbar ================== -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">
+  <img src="img/القسم.jpeg" alt="Logo 1" class="logo-img">
+  <img src="img/الجامعه.jpeg" alt="Logo 2" class="logo-img">
+</div>
+
+      <ul class="nav-links">
+        <li><a href="#hero">الرئيسية</a></li>
+        <li><a href="#snap">SNAP</a></li>
+        <li><a href="#gee">GEE</a></li>
+        <li><a href="#contact">اسماء الطلاب</a></li>
+      </ul>
+    
+      <div class="hamburger"><i class="fas fa-bars"></i></div>
+      <div class="theme-toggle"><i class="fas fa-moon"></i></div>
+      
+    </div>
+    
+  </nav>
+
+
+
+
+
+
+  <!-- ================== Hero Section ================== -->
+   <!-- <div class="stars-bg">
+  <canvas id="stars"></canvas>
+</div> -->
+<div id="particles-js"></div>
+
+  <section class="hero" id="hero">
+    <h2>SNAP vs Google Earth Engine</h2>
+    <p>قارن بين أهم مميزات كل برنامج لمعالجة صور الأقمار الصناعية، الرادار، والبيانات الجغرافية بسهولة وسلاسة.</p>
+    <a href="#snap" class="cta-btn">قارن الآن</a>
+  </section>
+
+  <!-- ================== Cards Section ================== -->
+
+
+
+
+<section class="bg">
+  <div class="snabb">
+  <h2>SNAP</h2>
+  <h3>
+    برنامج متخصص في <span class="highlight">معالجة صور الأقمار الصناعية</span>،
+    ويتميز بدعمه الكامل لجميع بيانات الأقمار الأوروبية. يوفر أدوات قوية
+    لتنفيذ <span class="highlight">معالجة بيانات الرادار</span> بجميع مراحلها،
+    مع إمكانيات متقدمة للقيام بـ <span class="highlight">التصحيح الإشعاعي</span>
+    و<span class="highlight">التصحيح الهندسي</span> للحصول على نتائج دقيقة.
+    كما يتيح بيئة مرنة للقيام بعمليات <span class="highlight">التحليل الجغرافي</span>
+    واستخراج الطبقات، بالإضافة إلى دمجه السلس مع برامج نظم الخرائط المختلفة.
+    يدعم العمل على المشاريع الكبيرة ويمنح المستخدم تحكمًا كاملاً في
+    <span class="highlight">معالجة البيانات الضخمة</span> بطريقة احترافية.
+  </h3>
+
+  <a href="https://step.esa.int/main/download/snap-download/" target="_blank" class="cta-btn snap-btn">
+    <i class="fas fa-download"></i> تحميل SNAP
+  </a>
+</div>
+
+
+<div class="een">
+  <h2>GEE</h2>
+  <h3>
+    منصة قوية لمعالجة صور الأقمار الصناعية عبر الإنترنت، تتميز بإمكانية
+    الوصول الفوري إلى <span class="highlight">أرشيف ضخم من البيانات</span>
+    بدون الحاجة إلى تحميلها. توفر أدوات متقدمة للقيام بعمليات
+    <span class="highlight">المعالجة السحابية</span> بسرعة عالية،
+    مع دعم كامل لعمليات <span class="highlight">التحليل الجغرافي</span>
+    وتتبع التغيرات الزمنية بدقة.
+    كما تتيح للمستخدم تنفيذ <span class="highlight">تحليلات معقدة</span>
+    من خلال بيئة برمجية سهلة، بالإضافة إلى إمكانية استخراج الخرائط
+    والنتائج مباشرة بشكل فوري. تعتبر مثالية للمشاريع الكبيرة لأنها تعتمد
+    على <span class="highlight">قدرات المعالجة السحابية</span> بدلًا من
+    قدرة جهاز المستخدم.
+  </h3>
+
+  <a href="https://earthengine.google.com/" target="_blank" class="cta-btn snap-btn">
+    <i class="fas fa-download"></i> فتح GEE
+  </a>
+</div>
+
+
+</section>
+
+
+
+
+<section class="timeline-section" id="timeline">
+  <h2 class="timeline-title">مراحل معالجة صور الأقمار الصناعية</h2>
+  <p class="timeline-sub">رحلة الصورة من التحميل حتى إنتاج الخريطة النهائية</p>
+
+  <div class="timeline-container">
+
+    <div class="timeline-item">
+      <div class="timeline-icon"><i class="fas fa-download"></i></div>
+      <h3>تحميل البيانات</h3>
+      <p>جلب بيانات Sentinel أو Landsat من المصدر.</p>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-icon"><i class="fas fa-sliders-h"></i></div>
+      <h3>التصحيح الإشعاعي</h3>
+      <p>إزالة تأثيرات الإضاءة والحصول على قيم دقيقة.</p>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-icon"><i class="fas fa-drafting-compass"></i></div>
+      <h3>التصحيح الهندسي</h3>
+      <p>مطابقة الصورة مع الإحداثيات والخرائط الحقيقية.</p>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-icon"><i class="fas fa-filter"></i></div>
+      <h3>الفلترة</h3>
+      <p>إزالة التشويش وتحسين جودة الصورة.</p>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-icon"><i class="fas fa-layer-group"></i></div>
+      <h3>استخراج الطبقات</h3>
+      <p>تحضير طبقات مثل NDVI و NDBI و Water Index.</p>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-icon"><i class="fas fa-chart-area"></i></div>
+      <h3>التحليل الجغرافي</h3>
+      <p>تحليل التغيرات والتمييز بين العناصر.</p>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-icon"><i class="fas fa-map"></i></div>
+      <h3>إنتاج الخريطة النهائية</h3>
+      <p>استخراج الخريطة أو الصورة بصيغة جاهزة للاستخدام.</p>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+
+  <!-- ظظظظظظظظظظظظظظظظظظظظظظظظظظظظظظظظظظظظظظظظظظظ -->
+
+
+
+
+
+  <section class="cards-section">
+    <div class="container cards">
+      <!-- SNAP Card -->
+<div class="card" id="snap">
+  <div class="icon"><i class="fas fa-satellite-dish"></i></div>
+  <h2>مميزات SNAP</h2>
+  <ul>
+    <li>مجاني ومفتوح المصدر بالكامل.</li>
+    <li>دعم كامل لجميع منتجات Sentinel بأنواعها.</li>
+    <li>أدوات قوية جدًا لمعالجة بيانات الرادار SAR.</li>
+    <li>أدوات متقدمة لمعالجة الصور البصرية والتصحيحات.</li>
+    <li>واجهة سهلة نسبيًا وتنظيم واضح للأدوات.</li>
+    <li>تكامل سلس مع برامج GIS مثل QGIS.</li>
+    <li>يدعم الإضافات (Toolboxes) لزيادة الوظائف.</li>
+    <li>مناسب للمشاريع الكبيرة لكن يعتمد على قدرة الجهاز.</li>
+    <li>مجتمع كبير ودعم فني جيد عبر المنتديات.</li>
+    <li>يعمل على Windows / Mac / Linux.</li>
+  </ul>
+</div>
+
+<!-- GEE Card -->
+<div class="card" id="gee">
+  <div class="icon"><i class="fas fa-globe"></i></div>
+  <h2>مميزات GEE</h2>
+  <ul>
+    <li>مجاني للاستخدام الأكاديمي ومتاح للجميع دون رسوم.</li>
+    <li>دعم كامل لـ Sentinel + آلاف مجموعات البيانات الأخرى.</li>
+    <li>معالجة SAR ممكنة لكن أقل مرونة مقارنة بـ SNAP.</li>
+    <li>معالجة الصور البصرية أقوى وأسرع لأنها معتمدة على السحابة.</li>
+    <li>واجهة GUI سهلة + محرر أكواد Console قوي جدًا.</li>
+    <li>تكامل كامل مع Python, JavaScript والـ API.</li>
+    <li>نتائج قابلة للتحميل مباشرة بصيغ GIS أو تحليلها داخل المنصة.</li>
+    <li>لا يعتمد على قوة جهازك — كل شيء يتم على السحابة.</li>
+    <li>مجتمع ضخم جدًا + Docs وTutorials جاهزة.</li>
+    <li>يعمل على أي جهاز لأنه Web-based بالكامل.</li>
+  </ul>
+</div>
+
+    </div>
+  </section>
+
+
+
+
+  <section class="when-to-use" id="when-to-use" dir="rtl">
+  <div class="container">
+
+    <h2 class="use-title">متى تستخدم كل نظام؟</h2>
+    <p class="use-sub">دليل سريع يساعدك تختار الأداة الأنسب لشغلك.</p>
+
+    <div class="use-grid">
+
+      <!-- SNAP Card -->
+      <div class="use-card snap-card">
+        <h3 class="use-heading">استخدم <span>SNAP</span> عندما:</h3>
+        <ul>
+          <li>تحتاج <span class="highlight">معالجة قوية لبيانات الرادار</span> بجميع مراحلها.</li>
+          <li>عايز تتحكم في كل خطوة من خطوات <span class="highlight">المعالجة المحلية</span>.</li>
+          <li>شغلك بيعتمد على <span class="highlight">تصحيح هندسي وإشعاعي دقيق</span>.</li>
+          <li>معاك جهاز إمكانياته كويسة وهيستحمل حجم البيانات.</li>
+          <li>عايز تشتغل بدون إنترنت وبطريقة ثابتة ومضمونة.</li>
+        </ul>
+      </div>
+
+      <!-- GEE Card -->
+      <div class="use-card gee-card">
+        <h3 class="use-heading">استخدم <span>GEE</span> عندما:</h3>
+        <ul>
+          <li>عايز تتعامل مع <span class="highlight">بيانات ضخمة جدًا</span> بدون تحميل.</li>
+          <li>محتاج <span class="highlight">سرعة عالية</span> في معالجة وتحليل البيانات.</li>
+          <li>جهازك ضعيف أو متوسط وعايز تعتمد على المعالجة السحابية.</li>
+          <li>عايز تطبق <span class="highlight">تحليل زمني</span> أو مقارنة سنوات بسهولة.</li>
+          <li>تحب تشتغل على المتصفح وتكتب كود مباشر بدل التسطيب والتجهيز.</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <!-- ================== Call to Action ================== -->
+<!-- ================== Call to Action ================== -->
+<section class="cta-section">
+  <div class="container">
+    <h2>ابدأ الآن!</h2>
+    <p>حمّل SNAP على جهازك أو جرّب Google Earth Engine مباشرة على الإنترنت.</p>
+    <div class="cta-buttons">
+      <a href="https://step.esa.int/main/download/snap-download/" target="_blank" class="cta-btn snap-btn">
+        <i class="fas fa-download"></i> تحميل SNAP
+      </a>
+      <a href="https://earthengine.google.com/" target="_blank" class="cta-btn gee-btn">
+        <i class="fas fa-globe"></i> جرب GEE
+      </a>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="gallery-section">
+  <!-- <h2 class="gallery-title">معرض الصور</h2> -->
+
+  <div class="gallery">
+    <img src="img/What is Electromagnet and it's Applications_.jfif" class="gallery-img" alt="">
+
+    <img src="img/download.jfif" class="gallery-img" alt="">
+    <img src="img/az.jpg" class="gallery-img" alt="">
+        <img src="img/Track Satellites from Your Desk_ Build Your Own 3D-Printed Satellite Hunter-Part 1.jfif" class="gallery-img" alt="">
+        <img src="img/asd.jpg" class="gallery-img" alt="">
+
+    <img src="img/ax.jfif" class="gallery-img" alt="">
+
+
+  </div>
+</section>
+
+<!-- Fullscreen Viewer -->
+<div id="fullscreenViewer">
+  <span id="closeViewer">&times;</span>
+  <img id="fullImage" src="">
+</div>
+
+
+
+
+
+
+
+
+
+<div id="loader">
+  <h1 id="explode-text">المجموعة العاشرة تقدم</h1>
+  <canvas id="explosion-canvas"></canvas>
+  <!-- <audio id="boom-sound" src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_28f52f7e68.mp3?filename=explosion-6081.mp3"></audio> -->
+</div>
+
+
+
+
+<section class="download-section" id="download">
+  <div class="container">
+    <h2>تحميل كل الموارد</h2>
+    <p>احصل على ملف PDF يحتوي على مقارنة SNAP vs GEE، خطوات المعالجة، التعريفات، الصور، والمصادر.</p>
+    <a href="img/asd.jpg" download class="cta-btn download-btn">
+      <i class="fas fa-file-download"></i> تحميل PDF كامل
+    </a>
+  </div>
+</section>
+
+
+
+<section class="ar-section" id="ar" style="position:relative;">
+  <div class="container">
+    <!-- <h2>🌐 استكشف الأقمار الصناعية بالواقع المعزز</h2> -->
+    <p>انظر إلى المجسم ثلاثي الأبعاد وقم بتحريك النموذج أو تكبيره.</p>
+
+    <div style="position:relative; width:100%; height:500px;">
+      <!-- Model Viewer -->
+      <model-viewer id="satelliteModel"
+                    src="https://modelviewer.dev/shared-assets/models/Astronaut.glb"
+                    alt="3D Satellite Model"
+                    ar
+                    ar-modes="webxr scene-viewer quick-look"
+                    environment-image="neutral"
+                    auto-rotate
+                    camera-controls
+                    style="width: 100%; height: 100%;">
+      </model-viewer>
+      
+
+      <!-- Label فوق المجسم -->
+  
+  </div>
+  
+</section>
+
+
+
+  <!-- ================== Scroll to Top ================== -->
+  <!-- <button id="scrollTopBtn" class="scroll-top-btn"><i class="fas fa-arrow-up"></i></button> -->
+
+<button class="rocket-btn" id="rocketBtn" title="Launch">
+  <i class="fa-solid fa-rocket"></i>
+  <div class="smoke-container" id="smokeContainer"></div>
+</button>
+
+
+
+<!-- زر فتح الشات مع روبوت يلوح -->
+<div id="chatbot-btn">
+  <div id="robot-wave">
+    <i class="fas fa-robot"></i>
+  </div>
+  <span id="ask-me-text">اسألني</span>
+</div>
+
+<!-- نافذة الشات -->
+<div id="chatbot-window">
+  <div id="chatbot-header">
+    <span>شات بوت الذكاء الاصطناعي</span>
+    <button id="chatbot-close">&times;</button>
+  </div>
+  <div id="chatbot-messages"></div>
+  <input type="text" id="chatbot-input" placeholder="اكتب سؤالك هنا واضغط Enter">
+</div>
+
+
+
+
+
+
+<section id="students" >
+  <h2>👨‍🎓 أسماء الطلاب</h2>
+
+  <div class="students-grid">
+    <div class="student-card">زياد حماده عواد</div>
+    <div class="student-card">ابراهيم احمد مرسي</div>
+    <div class="student-card">زياد ايهاب السيد</div>
+    <div class="student-card">زياد محمود احمد</div>
+    <div class="student-card">سيف الدين محمود احمد</div>
+    <div class="student-card">عمر خيري محمد</div>
+    <div class="student-card">محمد ايهاب السعيد</div>
+    <div class="student-card">مروان محمود مسعد</div>
+    <div class="student-card">يوسف سامح سيد</div>
+    <div class="student-card">اسراء عصام فريد</div>
+    <div class="student-card">الاء علام محمود</div>
+    <div class="student-card">بسمله فتحي سيف</div>
+    <div class="student-card">مريم محمد عبدالمنعم</div>
+    <div class="student-card">ملك عادل بنداري</div>
+    <div class="student-card">منار ماهر ابراهيم</div>
+  </div>
+
+  <h3>تحت إشراف: <span>د. أسماء القرش</span></h3>
+</section>
+
+  <!-- ================== Footer ================== -->
+  <footer id="contact">
+    <div class="container">
+      <p>&copy; 2025 جميع الحقوق محفوظه. جامعه الاسكندريه-الجيوماتكس</p>
+      <div class="socials">
+        <a href="https://www.facebook.com/share/167JRTFTgD/?mibextid=wwXIfr"><i class="fab fa-facebook-f"></i></a>
+        <!-- <a href="#"><i class="fab fa-twitter"></i></a> -->
+        <a href="https://www.linkedin.com/in/ziad-hamada?utm_source=share_via&utm_content=profile&utm_medium=member_ios"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
